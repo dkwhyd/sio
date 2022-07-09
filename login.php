@@ -44,9 +44,7 @@ if (isset($_POST['submit'])) {
           $_SESSION['nama'] = $dataUser['nama_pengguna'];
           $_SESSION['email'] = $email;
           $_SESSION['role'] = $dataUser['role'];
-          // alihkan menuju dashboard
-          // header('location: ../sio/pages/dashboard/dashboard.php');
-          header('location: ../sio/pages/daftar_obat.php?keyword=&halaman=1');
+          header('location: pages/daftar_obat.php?keyword=&halaman=1');
         } else {
           $err_msg = "Email & Password salah";
           $email = '';
@@ -77,10 +75,7 @@ if (isset($_POST['submit'])) {
 <body>
   <noscript>
     <h5>
-      JavaScript harus diaktifkan agar Anda dapat menggunakan Gmail dalam
-      tampilan standar. Namun, tampaknya JavaScript dinonaktifkan atau tidak
-      didukung oleh browser Anda. Untuk menggunakan tampilan standar, aktifkan
-      JavaScript dengan mengubah opsi browser, kemudian
+      JavaScript harus diaktifkan agar Anda dapat menggunakan website ini
       <a href="index.php"> coba lagi</a>.
     </h5>
     <style>
